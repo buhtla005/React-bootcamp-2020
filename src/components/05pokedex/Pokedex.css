@@ -1,0 +1,37 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Montserrat', sans-serif;
+     box-sizing: border-box;
+}
+
+.main{
+     display: flex;
+     justify-content: space-evenly;
+     margin: 5vh;
+     flex-wrap: wrap;
+}
+
+.Pokecard-main{
+     flex: 1 0 20%;
+     background-color: lightgray;
+     border: black 1px solid;
+     border-radius: 5px;
+     text-align: center;
+     margin: 1vh;
+}
+
+.Pokecard-img{
+     width: 200px;
+     height: 200px;
+}
+
+.Pokecard-type{
+     text-transform: capitalize;
+     font-size: 1.2em;
+     font-weight: 500;
+}
+
+.Pokecard-exp{
+     font-weight: 400;
+}

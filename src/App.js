@@ -6,11 +6,13 @@ import './App.css';
 //import SlotMachine from './components/03componentsAndPropertys/SlotMachine'
 //import MapIt from './components/03componentsAndPropertys/MapIt'
 //import DefaultProp from './components/03componentsAndPropertys/DefaultProp'
-import Froot from './components/04moduleExercise/MainFile'
+//import Froot from './components/04moduleExercise/MainFile'
+import Pokedex from './components/05pokedex/Pokedex'
+
 function App() {
   return (
     <div className="App">
-      <Froot/>
+      <Pokedex/>
     </div>
   );
 }
