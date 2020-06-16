@@ -7,12 +7,12 @@ import './App.css';
 //import MapIt from './components/03componentsAndPropertys/MapIt'
 //import DefaultProp from './components/03componentsAndPropertys/DefaultProp'
 //import Froot from './components/04moduleExercise/MainFile'
-import Pokedex from './components/05pokedex/Pokedex'
+import Pokegame from './components/05pokedex/PokeGame'
 
 function App() {
   return (
     <div className="App">
-      <Pokedex/>
+      <Pokegame/>
     </div>
   );
 }

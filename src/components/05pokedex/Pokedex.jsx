@@ -1,14 +1,13 @@
 import React from 'react'
 import './Pokedex.css'
-import data from './PokeData'
 import PokemonCard from './PokemonCard'
 
-const Pokedex = () => {
+const Pokedex = ({array}) => {
 
      return (
           <div className="main">
           {
-               data.map(item => (
+               array.map(item => (
                     <PokemonCard 
                     key={item.id} 
                     id={item.id}

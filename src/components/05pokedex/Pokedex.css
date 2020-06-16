@@ -8,22 +8,27 @@
 .main{
      display: flex;
      justify-content: space-evenly;
-     margin: 5vh;
+     margin: 1vh;
      flex-wrap: wrap;
+}
+
+.content{
+     display: flex;
+     flex-direction: column;
 }
 
 .Pokecard-main{
      flex: 1 0 20%;
      background-color: lightgray;
      border: black 1px solid;
-     border-radius: 5px;
+     border-radius: 5px; 
      text-align: center;
      margin: 1vh;
 }
 
 .Pokecard-img{
-     width: 200px;
-     height: 200px;
+     width: 150px;
+     height: 150px;
 }
 
 .Pokecard-type{
@@ -34,4 +39,51 @@
 
 .Pokecard-exp{
      font-weight: 400;
+}
+
+.Pokemon-resoult{
+     flex: 1;
+     font-size: 2em;
+     font-weight: 600;
+     text-align: center;
+     margin: 0.1em;
+     display: block;
+     color: red;
+}
+
+.Player1{
+     background: lightblue;
+     margin: 1em;
+     margin-bottom: 0em;
+     border-radius: 20px;
+     height: 40%;
+     flex: 1;
+}
+
+.Player2{
+     background: rgb(243, 169, 100);
+     margin: 1em;
+     margin-top: 0em;
+     border-radius: 20px;
+     height: 40%;
+     flex: 1;
+}
+
+
+.pl{
+     font-size: 2em;
+}
+
+h2{
+     margin: 2em;
+     margin-bottom: 0em;
+}
+
+p{
+     text-align: center;
+     font-size: 1em;
+}
+
+.rez{
+     display: flex;
 }
