@@ -1,0 +1,70 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.content{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     text-align: center;
+     width: 25%;
+     margin: auto;
+}
+
+.dices{
+     flex: 1;
+     display: flex;
+     justify-content: space-between;
+}
+
+.die{
+     color: lightsalmon;
+     scale: 5;
+     margin: 1vh;
+}
+
+.wooble{
+     animation: wobble 0.5s;
+}
+
+.button{
+     flex: 1;
+     width: 15vh;
+     padding: 1vh;
+     font-family: 'Montserrat';
+     font-weight: 600;
+     font-size: 2vh;
+
+     align-self: center;
+}
+
+.button:hover{
+     background-color: black;
+     color: white;
+}
+
+@keyframes wobble{
+     from{
+          transform: translate3d(0,0,0);
+     }
+     15%{
+          transform: translate3d(-25%,0,0) rotate3d(0,0,1, -5deg);
+     }
+     30%{
+          transform: translate3d(20%,0,0) rotate3d(0,0,1, 3deg);
+     }
+     45%{
+          transform: translate3d(-15%,0,0) rotate3d(0,0,1, -3deg);
+     }
+     60%{
+          transform: translate3d(10%,0,0) rotate3d(0,0,1, 2deg);
+     }
+     75%{
+          transform: translate3d(-5%,0,0) rotate3d(0,0,1, -1deg);
+     }
+     to{
+          transform: translate3d(0,0,0);
+     }
+}

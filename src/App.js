@@ -7,12 +7,14 @@ import './App.css';
 //import MapIt from './components/03componentsAndPropertys/MapIt'
 //import DefaultProp from './components/03componentsAndPropertys/DefaultProp'
 //import Froot from './components/04moduleExercise/MainFile'
-import Pokegame from './components/05pokedex/PokeGame'
+//import Pokegame from './components/05pokedex/PokeGame'
+//import StateButton from './components/06state/StateButton'
+import RollDice from './components/07roll-dice/RollDice'
 
 function App() {
   return (
     <div className="App">
-      <Pokegame/>
+      <RollDice/>
     </div>
   );
 }
