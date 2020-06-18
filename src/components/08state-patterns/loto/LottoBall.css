@@ -1,0 +1,23 @@
+.content{
+     margin-top: 5vh;
+     text-align: center;
+}
+
+.ball{
+     background-color: tomato;
+     border-radius: 50%;
+     color: white;
+     display: inline-block;
+     width: 3em;
+     height: 3em;
+     padding-top: 0.875em;
+     text-align: center;
+     margin: 0.5em;
+     font-weight: bold;
+     font-size: 1.5em;
+}
+
+button{
+     width: 120px;
+     height: 50px;
+}

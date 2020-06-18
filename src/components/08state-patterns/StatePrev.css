@@ -1,0 +1,10 @@
+.content{
+     text-align: center;
+     font-size: 5em;
+}
+
+button{
+     margin: 1em;
+     width: 120px;
+     height: 50px;
+}

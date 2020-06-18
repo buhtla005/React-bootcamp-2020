@@ -9,12 +9,15 @@ import './App.css';
 //import Froot from './components/04moduleExercise/MainFile'
 //import Pokegame from './components/05pokedex/PokeGame'
 //import StateButton from './components/06state/StateButton'
-import RollDice from './components/07roll-dice/RollDice'
+//import RollDice from './components/07roll-dice/RollDice'
+//import StatePrev from './components/08state-patterns/StatePrev'
+//import StateMutable from './components/08state-patterns/StateMutable'
+import Lotto from './components/08state-patterns/loto/Lottery'
 
 function App() {
   return (
     <div className="App">
-      <RollDice/>
+      <Lotto/>
     </div>
   );
 }
