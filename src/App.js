@@ -12,12 +12,13 @@ import './App.css';
 //import RollDice from './components/07roll-dice/RollDice'
 //import StatePrev from './components/08state-patterns/StatePrev'
 //import StateMutable from './components/08state-patterns/StateMutable'
-import Lotto from './components/08state-patterns/loto/Lottery'
+//import Lotto from './components/08state-patterns/loto/Lottery'
+import Coin from './components/08state-patterns/coin/CoinFlip'
 
 function App() {
   return (
     <div className="App">
-      <Lotto/>
+      <Coin/>
     </div>
   );
 }

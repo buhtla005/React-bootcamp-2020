@@ -1,0 +1,27 @@
+.content{
+     text-align: center;
+     margin-top: 10vh;
+}
+
+button{
+     width:100px;
+     height: 40px;
+     background-color: lightgray;
+     margin: 2vh;
+}
+
+p{
+     font-family: 'Montserrat', sans-serif;
+     font-size: x-large;
+     margin: 2vh;
+}
+img{
+     width: 200px;
+     height: 200px;
+}
+
+.coin{
+     widows: 200px;
+     height: 200px;
+     margin: 2vh;
+}
