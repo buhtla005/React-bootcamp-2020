@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Coin = ({coin}) => {
+const Coin = ({side, imgSrc}) => {
      return (
           <div className="coin">
-               <img src={`https://tinyurl.com/react-coin-${coin}-jpg`} alt="coin"/>
+               <img src={imgSrc} alt="coin"/>
           </div>
      );
 }

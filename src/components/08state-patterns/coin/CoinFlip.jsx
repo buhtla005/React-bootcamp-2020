@@ -3,11 +3,18 @@ import './CoinFlip.css'
 import Coin from './Coin'
 
 class StateMutable extends Component {
+
+     static defaultProps = {
+          coins:[
+               {side: "heads", imgSrc: "https://tinyurl.com/react-coin-heads-jpg"},
+               {side: "tails", imgSrc: "https://tinyurl.com/react-coin-tails-jpg"}
+          ]
+     }
      
      constructor(props){
           super(props)
           this.state={
-               coin: true,
+               coin: null,
                counter: 0,
                heads: 0,
                tails: 0,
@@ -15,25 +22,17 @@ class StateMutable extends Component {
      }
 
      handleChange = () => {
-          this.setState(currState => ({counter: currState.counter+1}))
-          let c = Math.floor(Math.random()*2)
-          c === 1 ? this.head() : this.tails()
+          this.flipCoin()
      }
 
-     head = () => {
-          this.setState(currState => {
-               return {
-                    heads: currState.heads +1,
-                    coin: true
-               }
-          })
-     } 
-
-     tails = () => {
-          this.setState(currState => {
-               return {
-                    tails: currState.tails +1,
-                    coin: false
+     flipCoin = () => {
+          const newCoin = this.props.coins[Math.round(Math.random())]
+          this.setState( currState => {
+               return{
+                    currState: newCoin,
+                    counter: currState.counter + 1,
+                    heads: currState.heads + (newCoin.side === "heads" ? 1 : 0),
+                    tails: currState.tails + (newCoin.side === "tails" ? 1 : 0)
                }
           })
      }
@@ -42,8 +41,7 @@ class StateMutable extends Component {
           return (
                <div className="content">
                     <h2>Let's flip a coin!</h2>
-                    {this.state.coin?"true":"false"}
-                    <Coin coin={this.state.coin ? "heads" : "tails"}/>
+                    {this.state.currState && <Coin side={this.state.currState.side} imgSrc={this.state.currState.imgSrc}/>}
                     <button onClick={this.handleChange}>CLICK ME</button>
                     <p>Out of {this.state.counter} flips, there have been {this.state.heads} heads and {this.state.tails} tails.</p>
                </div>

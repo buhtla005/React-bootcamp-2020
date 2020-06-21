@@ -13,12 +13,15 @@ import './App.css';
 //import StatePrev from './components/08state-patterns/StatePrev'
 //import StateMutable from './components/08state-patterns/StateMutable'
 //import Lotto from './components/08state-patterns/loto/Lottery'
-import Coin from './components/08state-patterns/coin/CoinFlip'
+//import Coin from './components/08state-patterns/coin/CoinFlip'
+//import Boxes from './components/08state-patterns/box/Boxes'
+//import Num from './components/09event/Numbers'
+import Hangman from './components/10hangman/Hangman'
 
 function App() {
   return (
     <div className="App">
-      <Coin/>
+      <Hangman/>
     </div>
   );
 }
