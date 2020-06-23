@@ -16,12 +16,13 @@ import './App.css';
 //import Coin from './components/08state-patterns/coin/CoinFlip'
 //import Boxes from './components/08state-patterns/box/Boxes'
 //import Num from './components/09event/Numbers'
-import Hangman from './components/10hangman/Hangman'
+//import Hangman from './components/10hangman/Hangman'
+import LightOut from './components/11LightsOut/Board'
 
 function App() {
   return (
     <div className="App">
-      <Hangman/>
+      <LightOut/>
     </div>
   );
 }
