@@ -1,0 +1,30 @@
+body{
+     margin: 10vh auto;
+}
+
+form{
+     background-color: lightgrey;
+     width:20%;
+     margin: auto;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: darkgray 4px 4px 4px ;
+     clear: both;
+}
+
+button{
+     width: 120px;
+     height: 30px;
+     border-radius: 15px;
+     text-align: center;
+     margin: 1vh;
+}
+
+input{
+     margin: 1vh;
+     width: 200px;
+     height: 30px;
+     border-radius: 10px;
+     width: 100%;
+     clear: both;
+}

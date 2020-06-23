@@ -17,12 +17,13 @@ import './App.css';
 //import Boxes from './components/08state-patterns/box/Boxes'
 //import Num from './components/09event/Numbers'
 //import Hangman from './components/10hangman/Hangman'
-import LightOut from './components/11LightsOut/Board'
+//import LightOut from './components/11LightsOut/Board'
+import Form from './components/12form/Form'
 
 function App() {
   return (
     <div className="App">
-      <LightOut/>
+      <Form/>
     </div>
   );
 }
