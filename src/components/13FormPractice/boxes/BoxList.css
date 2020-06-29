@@ -1,0 +1,46 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     height: 100vh;
+}
+
+.container{
+     width: 80%;
+     display: flex;
+}
+
+.form-content{
+     margin-top: 10vh;
+}
+
+.form-con{
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.input-field{
+     width: auto;
+     text-align: left;
+     font-size: large;
+}
+
+.newbox{
+     flex-direction: column-reverse;
+}
+
+h3{
+     margin: 1vh;
+}
+
+button{
+     margin: 1vh;
+     width: 120px;
+     height: 30px;
+     border-radius: 5px;
+}

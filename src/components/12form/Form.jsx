@@ -13,13 +13,13 @@ class Form extends Component{
      }
 
      handleChange = (e) =>{
-          e.preventDefault()
-          const{target:{name, value}} = e
+          const{name, value} = e.target
           this.setState({[name]:value})
      }
 
-     handleSubmit = () => {
-          alert(`You typed: ${this.state.username} and ${this.state.password}`)
+     handleSubmit = (e) => {
+          e.preventDefault()
+          this.props.addItem(this.state)
           this.setState({
                username: "",
                password: ""
@@ -33,23 +33,25 @@ class Form extends Component{
                          <h3>User input form</h3>
                          
                          <div className="dio-forma">
-                              <label for="username">Username: </label>
+                              <label htmlFor="username">Username: </label>
                               <input 
                               type="text" 
                               name="username" 
                               value={this.state.username}
                               onChange={this.handleChange}
                               id="username"
+                              autoComplete="off"
                               />
                          </div>
                          <div className="dio-forma">
-                              <label for="password">Password: </label>
+                              <label htmlFor="password">Password: </label>
                               <input 
                               type="password" 
                               name="password" 
                               value={this.state.password}
                               onChange={this.handleChange}
                               id="password"
+                              autoComplete="off"
                               />
                          </div>
                          <button>Submit</button>
