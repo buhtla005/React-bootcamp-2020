@@ -1,0 +1,162 @@
+/* Please ❤ this if you like it! */
+/* Follow Me https://codepen.io/designfenix */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+:root{
+	--animation-duration: 5s;
+	--body-bg : #E8EAF6;
+	--face-color : #455A64;
+	--box-color : #fff;
+	--box-depth: 10px;
+}
+
+body{
+	background: var(--body-bg);
+	font-family:'Montserrat',sans-serif;
+}
+.loader{
+	display: block;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	background: var(--box-color);
+	border-radius: 12px;
+	margin-top:-45px;//: translate(-50%,-50%);
+	margin-left:-45px;
+	animation: rotationBox ease-in-out var(--animation-duration) infinite;
+	.dots{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		border: var(--face-color) 3px solid;
+		font-size: 12px;
+		text-align:center;
+		&:nth-of-type(3){
+			animation: dot3 ease-in-out var(--animation-duration) infinite;
+		}
+		&:nth-of-type(2){
+			animation: dot2 ease-in-out var(--animation-duration) infinite;
+		}
+		&:nth-of-type(1){
+			animation: dot1 ease-in-out var(--animation-duration) infinite;
+		}
+	}
+}
+/*DOTS ANIMATIONS*/
+@keyframes dot1{
+	0%,20%{
+		transform: translate(15px, 50px);
+		width: 55px;
+	}
+	40%{
+		transform: translate(15px, 50px);
+		width: 20px;
+	}
+	60%{
+		transform: translate(15px, 50px);
+		height: 20px;
+	}
+	80%{
+		transform: translate(15px, 15px);
+		height: 55px;
+	}
+	100%{
+		transform: translate(15px, 15px);
+		height: 20px;
+	}
+}
+@keyframes dot2{
+	0%,20%{
+		transform: translate(50px, 15px);
+		height: 20px;
+	}
+	40%{
+		transform: translate(50px, 15px);
+		height: 55px;
+	}
+	60%{
+		transform: translate(50px, 50px);
+		height: 20px;
+		width: 20px;
+	}
+	80%{
+		transform: translate(50px, 50px);
+		width:20px;
+	}
+	100%{
+		width:55px;
+		transform: translate(15px, 50px);
+	}
+}
+@keyframes dot3{
+	0%,20%{
+		transform: translate(15px, 15px);
+	}
+	40%{
+		transform: translate(15px, 15px);
+		width: 20px;
+	}
+	60%{
+		width: 55px;
+		transform: translate(15px, 15px);
+	}
+	80%{
+		width: 20px;
+		transform: translate(50px, 15px);
+	}
+	100%{
+		transform: translate(50px, 15px);
+	}
+}
+/*BOX ANIMATIONS*/
+@keyframes rotationBox{
+	0%,20%{
+		transform: rotate(0deg);
+		box-shadow: 0px var(--box-depth) 0px rgba(0,0,0,.2), 0px var(--box-depth) 25px rgba(0,0,0,.1);
+	}
+	40%{
+		transform: rotate(90deg);
+		box-shadow: var(--box-depth) 0 0px rgba(0,0,0,.2), var(--box-depth) 0 25px rgba(0,0,0,.1);
+	}
+	60%{
+		box-shadow: 0 calc(var(--box-depth)*-1) 0px rgba(0,0,0,.2),0 calc(var(--box-depth)*-1) 25px rgba(0,0,0,.1);
+		transform: rotate(180deg);
+	}
+	80%{
+		box-shadow: calc(var(--box-depth)*-1) 0px 0px rgba(0,0,0,.2), calc(var(--box-depth)*-1) 0px 25px rgba(0,0,0,.1);
+		transform: rotate(270deg);
+	}
+	100%{
+		box-shadow: 0px var(--box-depth) 0px rgba(0,0,0,.2),0px var(--box-depth) 25px rgba(0,0,0,.1);
+		transform: rotate(360deg);
+	}
+}
+
+
+/* DEV */
+.dev{
+  position: fixed;
+	font-size: 14px;
+  top:10px;
+  left:10px;
+  padding: 1em;
+	color: var(--face-color);
+  background-color: white;
+	border-radius: 25px;
+	a{
+		text-decoration: none;
+		font-weight: bold;
+		color: var(--face-color);
+		transition: ease all .3s;
+		&:hover{
+			color: #EF5350;
+			text-decoration: underline;
+		}
+	}
+	span{
+		color: #EF5350;
+	}
+}
