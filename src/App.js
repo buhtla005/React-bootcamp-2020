@@ -28,12 +28,13 @@ import './App.css';
 //import GithubUserInfo from './components/16Lyfecycle/GithubUserInfo'
 //import Cards from './components/17CardsAPI/Cards'
 //import DadJokes from './components/18Joke/DadJokes'
-import R from './components/19Router/Routeing'
+//import R from './components/19Router/Routeing'
+import Routing from './components/20vendingMachine/Routing'
 
 function App() {
   return (
     <div className="App">
-      <R/>
+      <Routing/>
     </div>
   );
 }
