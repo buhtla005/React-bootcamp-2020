@@ -2,30 +2,32 @@ import React, { Component } from 'react'
 import DATA from './data/data'
 import { Route, Switch } from 'react-router-dom'
 import Dog from './Dog'
-import AllDogs from './Dogs'
+import AllDogs from './AllDogs'
 
 class Routing extends Component {
     
     constructor(props) {
         super(props);
         this.state={
-            data: []
+            data: DATA
         }
     }
-
-    componentDidMount = () => {
-        this.setState({ data: DATA })
-    }
     
-              /**
-                 * <Route path="/dogs" component={Dogs}/>
-                 */
     render() {
+        
+        const getDog = props => {
+            let dogName = props.match.params.name
+            let currentDog = this.state.data.find(dog => (
+                dog.name.toLowerCase() === dogName.toLowerCase()
+            ))
+            return <Dog {...props} dog={currentDog}/>
+        }
 
         return (
             <div>
                 <Switch>
-                    <Route exec path="/dogs" render={() => <AllDogs dogs={this.state.data}/>}/>
+                    <Route exact path="/dogs" render={() => <AllDogs dogs={this.state.data}/>}/>
+                    <Route exact path="/dogs/:name" render={getDog}/> 
                 </Switch>        
             </div>
         )

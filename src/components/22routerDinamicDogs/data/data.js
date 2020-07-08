@@ -3,7 +3,7 @@ import img1 from '../img/whiskey.jpg'
 import img2 from '../img/hazel.jpg'
 import img3 from '../img/tubby.jpg'
 
-const DOGS = [
+const DATA = [
     {
       name: "Whiskey",
       age: 5,
@@ -39,4 +39,4 @@ const DOGS = [
     }
   ]
 
-  export default DOGS
+  export default DATA
