@@ -29,7 +29,10 @@ import './App.css';
 //import Cards from './components/17CardsAPI/Cards'
 //import DadJokes from './components/18Joke/DadJokes'
 //import R from './components/19Router/Routeing'
-import Routing from './components/20vendingMachine/Routing'
+//import Routing from './components/20vendingMachine/Routing'
+//import Food from './components/21routerPatterns/Food'
+//import Routing from './components/21routerPatterns/Routing';
+import Routing from './components/22routerDinamicDogs/Routing'
 
 function App() {
   return (
